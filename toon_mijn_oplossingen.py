@@ -13,5 +13,5 @@ if current_branch == "main":
     current_branch = os.popen("git branch --show-current").read().strip()
 if current_branch == "oplossing":
     os.system("git add .")
-    os.system("git commit -m 'commit mijn oplossingen en switch naar alle oplossingen'")
+    os.system('git commit -m "commit mijn aanpassingen aan alle oplossingen en switch naar mijn oplossingen"')
     os.system("git checkout mijn-oplossingen")
