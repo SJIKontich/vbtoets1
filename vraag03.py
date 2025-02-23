@@ -23,3 +23,10 @@ def middle_out(lst):
     return result
 
 print(middle_out([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+# a) Schrijf een test die de functie middle_out test.
+def test_middle_out():
+    assert middle_out([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == [1, 2.5, 5.5, 8.5, 10]
+
+# b) Gebruik de debugger om te achterhalen wat de waarde van i is na de while loop.
+# Zet een breakpoint op regel 22 en lees de waarde van i gewoon af: i = 9

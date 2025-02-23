@@ -23,4 +23,16 @@ def naar_links1(l, i):
     lijst = l.copy()
 
     # Zet hier je code
-    ...
+    if i == 0:
+        return lijst
+    if lijst[i] == 0:
+        return lijst
+    if lijst[i] == lijst[i-1]:
+        lijst[i-1] = lijst[i-1] + lijst[i]
+        lijst[i] = 0
+        return lijst
+    if lijst[i-1] == 0:
+        lijst[i-1] = lijst[i]
+        lijst[i] = 0
+        return lijst
+    return lijst

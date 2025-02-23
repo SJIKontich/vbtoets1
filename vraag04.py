@@ -13,7 +13,7 @@ def integraal(f, a, b, n):
     som = 0
     dx = (b - a) / n
     # x neemt de eerste waarde aan van het eerste deelinterval
-    x = a
+    x = a + dx / 2
     for i in range(n):
         som = som + f(x)
         # x neemt de waarde aan van het volgende deelinterval

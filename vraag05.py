@@ -12,5 +12,8 @@
 # >>> variantie([1, 2, 3], [0.2, 0.5, 0.3], 2.1)
 # 0.49
 
-def variantie(): # vul de parameters zelf in
-    ...
+def variantie(waarden, frequenties, gemiddelde):
+    som = 0
+    for i in range(len(waarden)):
+        som += (waarden[i] - gemiddelde) ** 2 * frequenties[i]
+    return som
