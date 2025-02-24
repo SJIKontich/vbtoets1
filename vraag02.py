@@ -8,6 +8,8 @@
 # Schrijf een functie C(n,k) die de combinatie berekent met die formule
 
 def C(n, k):
-    if k == 0 or n == k:
+    if n == 0 and k == 0:
         return 1
-    return C(n-1, k-1) * n // k
+    if k == 0:
+        return 1
+    return C(n-1, k-1) * n / k

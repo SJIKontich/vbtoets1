@@ -23,16 +23,21 @@ def naar_links1(l, i):
     lijst = l.copy()
 
     # Zet hier je code
+    # helemaal links, doe niets
     if i == 0:
         return lijst
+    # nul op index i, doe niets
     if lijst[i] == 0:
         return lijst
+    # samenvoegen als gelijk
     if lijst[i] == lijst[i-1]:
         lijst[i-1] = lijst[i-1] + lijst[i]
         lijst[i] = 0
         return lijst
+    # als element links van i (dus i-1) gelijk is aan 0, verplaats naar links
     if lijst[i-1] == 0:
         lijst[i-1] = lijst[i]
         lijst[i] = 0
         return lijst
+    # in alle andere gevallen gewoon lijst teruggeven
     return lijst

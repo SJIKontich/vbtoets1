@@ -15,5 +15,5 @@
 def variantie(waarden, frequenties, gemiddelde):
     som = 0
     for i in range(len(waarden)):
-        som += (waarden[i] - gemiddelde) ** 2 * frequenties[i]
+        som = som + (waarden[i] - gemiddelde) ** 2 * frequenties[i]
     return som
